@@ -1,15 +1,19 @@
 body{
     background: white;
     font-family: roboto;
+    background: #ff7e5f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 #container{
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
     width: 360px;
     margin: 100px auto;
-    background-color: #F7F7F7;
+    background: #F7F7F7;
 }
 h1{
-    background-color: #2980b9;
+    background: #2980b9;
     color: white;
     margin: 0;
     padding: 10px 20px;
@@ -24,7 +28,6 @@ h1{
 li{
     background: white;
     height: 40px;
-    padding: 10px 20px;
     line-height: 40px;
     color: #666;
 }
@@ -49,4 +52,19 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+.fa-pencil{
+    float: right;
+}
+span{
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+}
+li.hover span{
+    width:40px;
 }
