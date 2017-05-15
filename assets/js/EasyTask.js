@@ -30,9 +30,10 @@ $("input[type='text']").keypress(function(event){
     if (event.which === 13){
         //get new task text from input
         var taskText = $(this).val();
-        //create a new li and add to ul
-        $("ul").append("<li>" + taskText + "</li>")
+        //get rid of task text
         $(this).val("");
+        //create a new li and add to ul
+        $("ul").append("<li>" + taskText + "</li>");
     }
 });
 //Add tasks
